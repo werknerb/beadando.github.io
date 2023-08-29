@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Időpont</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+    <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div class="hamburger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3" ></div>
+        </div>
+        <ul class="navitem">
+            <li><a href="./main.html">Menü</a></li>
+            <li><a href="./Rólam.html">Rólam</a></li>
+            <li><a href="./ido.html">Időpontok</a></li>
+            <li><a href="./kapcsoalt.html">Elérhetőségek</a></li>
+        </ul>
+    </nav>
+ </header>
+ <section class="foglalo">
+   <div class="header"><h2>Időpontfoglalás</h2></div>
+
+   <form action="#">
+        <div class="elso">
+            <div class="adatok">
+                <span class="fejlec">Személyes adatok</span>
+
+                <div class="szem">
+                    <div class="szem-input">
+                        <label for="nev">Vezetéknév *</label>
+                        <input type="text" name="nev" id="nev" placeholder="Vezetéknév" required>
+                    </div>
+               
+                    <div class="szem-input">
+                        <label for="nev">Keresztnév *</label>
+                        <input type="text" name="nev" id="nev" placeholder="Keresztnév" required>
+                    </div>
+                    <div class="szem-input">
+                        <label for="mail">E-mail cím *</label>
+                        <input type="email" name="mail" id="mail" placeholder="valakiv@gmail.com"required>
+                    </div>
+                    <div class="szem-input">
+                        <label for="date">Születési év *</label>
+                        <input type="date" name="date" id="date" placeholder="Vezetéknév" required>
+                    </div>
+               
+                    <div class="szem-input">
+                        <label for="tel">Telefonszám *</label>
+                        <input type="tel" name="tel" id="tel" placeholder="+36123456789" required>
+                    </div>
+                    <p>Tetoválás helye *</p>
+                    <select  name="hely" id="hely">
+                        <option value="lab">Láb</option>
+                        <option value="vadli">Vádli</option>
+                        <option value="boka">Boka</option>
+                        <option value="labfej">Lábfej</option>
+                        <option value="felkar">Felkar</option>
+                        <option value="alkar">Alkar</option>
+                        <option value="csuklo">Csukló</option>
+                        <option value="kezfej">Kézfej</option>
+                        <option value="nyak">Nyak</option>
+                        <option value="fej">Fej</option>
+                        <option value="hat">Hát</option>
+                        <option value="fenek">Fenék</option>
+                        <option value="intim">Intim</option>
+                        <option value="egyeb">Egyéb (bővebben lentebb</option>
+                    </select>
+                    <br>
+                    <div class="szin">
+                        <label for="color">Fekete & Fehér</label>
+                        <input type="checkbox" name="color" id="color">
+                        <label for="nem">Szines</label>
+                        <input type="checkbox" name="color" id="color">
+                    </div>
+                    <br>
+                    <div class="szem-input">
+                        <label for="meret">Vezetéknév *</label>
+                        <input type="text" name="meret" id="meret" placeholder="(pl: 4x5)" required>
+                    </div>
+
+                    
+                       
+                       <p>Pontos leírás:</p>
+                       <br>
+                    <div>
+                       
+                        <textarea name="text" id="text" cols="80%" rows="10"></textarea>
+                    </div>
+                    <div class="file">
+                        <br>
+                        <p>Fotó vagy minta csatolása (nem kötelező!)</p>
+                        
+                        <input type="file" name="file" id="file">
+                        <label for="file">Fájl csatolása</label>
+                    </div>
+                    <div class="line123"></div>
+                    <div class="szin">
+                        <input type="checkbox" name="meg" id="meg">
+                        <label for="meg">Jelölje be a foglalás megerősítéséhez</label>
+                    </div>
+                    <div class="line123"></div>
+                    <div>
+                        <p> ( * ) Kötelezően kitöltendő mező</p>
+                    </div>
+                    <br>
+                    <div class="line123"></div>
+                    <br>
+                    <div>
+                        <a href="#" class="meg">Időpont leadása</a> 
+                    </div>
+                </div>    
+            </div>
+        </div>
+   </form>
+
+
+ </section>
+ <section class="footer">
+  <div class="footer-content">
+      <h4 class="lent">Menük</h4>
+      <ul>
+          <li><a href="./main.html">Menü</a></li>
+          <li><a href="./Rólam.html">Rólam</a></li>
+          <li><a href="./ido.html">Időpontok</a></li>
+          <li><a href="./kapcsoalt.html">Kapcsolatok</a></li>
+      </ul>
+  </div>
+  <div class="footer-content">
+      <h4>Elérhetőségek</h4>
+      <div class="elerhet">
+      <ul>
+          <li><a href="06301603433"><i class='bx bx-mobile'></i>061234567</a></li>
+          <li><a href="#"><i class='bx bxs-map' ></i> Budapest, Szófia utca 33</a></li>
+          <li><a href="#"><i class='bx bxs-envelope'></i>valamiemail@valami.com</a></li>
+      </ul>
+      </div>
+  </div>
+  <div class="footer-content">
+      <h4>Kapcsolat</h4>
+      <div class="icons">
+          <a href="#"><i class='bx bxl-facebook' ></i></a>
+          <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="#"><i class='bx bxl-pinterest' ></i></a>
+      </div>
+  </div>
+  
+</section>
+    
+</body>
+</html>
